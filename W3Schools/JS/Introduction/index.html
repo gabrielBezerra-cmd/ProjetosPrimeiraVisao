@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Introducao</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <h2>Mudando o texto com JS</h2>
+    <p id="demo">Podemos mudar valores com o JS.</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hellow JavaScript!'">Click aqui</button>
+    <br>
+    <h2>Alterando valores de estilos</h2>
+    <button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'">35 pixels</button>
+    <p id="demo2">Aumentando o valor do campo</p>
+    <button type="button" onclick="document.getElementById('demo2').style.fontSize='50px'">50 pixels</button>
+    <br>
+    <h2>Escondendo itens com JavaScript</h2>
+    <button type="button" onclick="document.getElementById('demo3').style.display='block'">Aparecer!</button>
+    <p id="demo3">Escondendo o texto</p>
+    <button type="button" onclick="document.getElementById('demo3').style.display='none'">Sumir!</button>
+</body>
+</html>
