@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    
+    <H1>Variaveis</H1>
+
+    <p id="demo"> 6 + 3 é igual a ...</p>
+
+    <button type="button" onclick="calculoComVariaveis('demo')">Clique aqui para somar!</button>
+
+    <h1>
+        Objetos
+    </h1>
+
+
+    <p id="demoNome"></p>
+    
+
+    <button type="button" onmouseover="this.innerHTML = Date()">Que horas são ?</button>
+
+    <script>
+        var objeto = {
+                        primeiroNome:"Gabriel",
+                        segundoNome:"Bezerra",
+                        completoNome: function() { return this.primeiroNome + "" + this.segundoNome }
+                    }
+    
+        document.getElementById("demoNome").innerHTML = "Olá, mr." + objeto.segundoNome + ", seu nome é " + objeto.primeiroNome;
+    
+    </script>
+    
+
+</body>
+</html>
